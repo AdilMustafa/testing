@@ -1,0 +1,324 @@
+body{
+  margin:auto;
+  height: 100%;
+  width: 100%;
+  max-width: 1024px;
+  max-height: 768px;
+}
+
+
+.topnav {
+  background-color: #052b48;
+  height:125px;
+  overflow: hidden;
+  z-index: 1;
+}
+
+
+.topnav ul{ 
+  margin: 0;
+  margin-top: 40px;
+  padding-right: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  list-style: none;
+}
+
+/*this alters the li HTML tag that is inside the navigation tag*/
+.topnav ul li{
+  list-style-type:none;
+  display:inline;  
+}
+
+
+/* Style the links inside the navigation bar */
+.topnav ul li a {
+float: left;
+color: #f2f2f2;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+font-size: 14px;
+font-family: Arial, Helvetica, sans-serif;
+max-width: 200px;
+
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+text-decoration: underline;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+background-color: #04AA6D;
+color: white;
+}
+
+/* Right-aligned section inside the top navigation */
+.topnav-right {
+float: right;
+}
+
+
+
+/* The sidenav */
+.sidenav {
+  height: 100%;
+  width: 60px;
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  background-color: rgb(255, 255, 255);
+  overflow-x: hidden;
+  padding-top: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+
+  display: flex;
+  align-items: center;
+}
+
+.sidenav ul{
+  list-style: none;
+}
+
+.sidenav ul li{
+  list-style: none;
+}
+
+
+
+/* Page content */
+.main {
+  margin-left: 200px; /* Same as the width of the sidenav */
+}
+
+
+footer{
+  background: #c8ccd4;
+  width: 100%;
+  height:50px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: -2;
+  
+}
+
+
+
+.homeBtn{
+  cursor:pointer;
+  border:none;
+  width:30px;
+  height:30px;
+  margin-left: -25px;
+
+}
+
+
+
+.refBtn{
+  cursor:pointer;
+  border:none;
+  width:30px;
+  height:30px;
+  margin-left: -25px;
+}
+
+
+
+
+.piBtn{
+  cursor:pointer;
+  border:none;
+  width:30px;
+  height:30px;
+  margin-left: -25px;
+}
+
+
+.container{
+  margin-left:100px;
+  width:auto;
+  height:auto;
+  padding: 25px;
+  z-index: -2;
+}
+
+h1{
+  font-family: Arial, Helvetica, sans-serif;
+  color:  #0e334f;
+  font-weight: bold;
+}
+
+p{
+  font-family: Arial, Helvetica, sans-serif;
+  color:  #0e334f;
+  font-size: 22px;
+  margin:auto;
+  
+
+}
+
+.logo{
+  position:absolute;
+  bottom:90px;
+  left:115px;
+  width:200px; 
+  height:66px;
+}
+
+
+
+/* The Modal (background) */
+.Overlay {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  padding-top: 100px; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 50%; 
+}
+
+/* Modal Content */
+.OverlayContent {
+  background-color: #c0ccd3;
+  margin: auto;
+  margin-top: -75px;
+  padding: 20px 40px;
+  width: 80%;
+  
+}
+
+/* The Close Button */
+.close{
+  color: #000000;
+  float: right;
+  font-size: 40px;
+  font-weight: bold;
+  border: 1px solid #0e334f; 
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  align-items: center;
+  text-align: center;
+  
+  
+  
+}
+
+.close:hover{
+  color: red;
+  text-decoration: none;
+  cursor: hand;
+}
+
+
+
+.slidecontainer {
+  width: 340px; /* Width of the outside container */
+  position:absolute;
+  right:20%;
+  margin: auto;
+  margin-top:50px;
+}
+
+/* The slider itself */
+.slider {
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  width: 100%; /* Full-width */
+  height: 5px; /* Specified height */
+  background: #0e334f; /* Grey background */
+  outline: none; /* Remove outline */
+  transform: rotate(90deg);
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+  /* background: url("../images/sliderBtn.png"); */
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 30px; /* Set a specific slider handle width */
+  height: 30px; /* Slider handle height */
+  background: #0e334f; 
+  cursor: pointer; /* Cursor on hover */
+  border-radius: 100%;
+  border:2px solid white;
+  
+}
+
+.slider::-moz-range-thumb {
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: #0e334f; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+  border:5px solid white;
+}
+
+
+.grid-container {
+
+  position: absolute;
+  /* right:0px;
+  left:0px; */
+  margin-left:-45px;
+  margin-right:auto;
+  margin-top: -108px;
+  display: grid;
+  grid-template-columns: 100px;
+  padding: 3px;
+  gap:10px;
+  z-index: -1;
+}
+.grid-item {
+  background-color: #ffc424;
+  padding: 3px;
+  font-size: 13px;
+  text-align: right;
+  font-family: Arial, Helvetica, sans-serif;
+  opacity: 0.3;
+  border-top-left-radius: 15px;
+}
+
+
+
+.revealBtn{
+  position:absolute;
+  width:115px;
+  padding:5px;
+  background: #052b48;
+  bottom:90px;
+  right: 100px;
+  height:25px;
+  color: #ffc424;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  border-radius: 5px;
+  cursor: pointer;
+  
+}
+
+.sliderContainer{
+  position: absolute;
+  margin-top: 25px;
+  left: 50%;
+  right: 0px;
+  width: 300px;
+}
+
+.secretReveal{
+  position:absolute;
+  bottom:88px;
+  right: 100px;
+  width: 300px;
+  height: 500px;
+  opacity: 0;
+}
+
+

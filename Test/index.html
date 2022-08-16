@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Website</title>
+
+  <!-- styles -->
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/veeva-library.js"></script>
+
+</head>
+
+<body>
+
+  <!-- -------------- Navigation Bar (Start) -------------- -->
+  <nav>
+    <div class="topnav">
+      <div class="topnav-right">
+        <ul>
+          <li>
+            <a href="index.html" style="border-right: 1px solid white ;">UNMET</a>
+          </li>
+          <li>
+            <a href="index.html" style="border-right: 1px solid white ;">TARGTED MoA</a>
+          </li>
+          <li>
+            <a href="index.html" style="color:#e8ab30; margin-top:-10px">RAPID AND <br> SUSTAINED EFFICACY</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <div id="mySidenav" class="sidenav">
+    <ul>
+      <li>
+        <div class="homeBtn">
+          <a href="index.html">
+            <img src="images/Home-icon.png" alt="home" style="width:100%; height:100%;" >
+          </a>
+        </div>
+      </li>
+      <br>
+      <br>
+      <br>
+      <li>
+        <a id="refButton">
+          <div class="refBtn">
+            <img src="images/Reference-icon.png" alt="ref" style="width:100%; height:100%" id="pic"
+              onclick="swapImage(); changeCount(2)">
+          </div>
+        </a>
+      </li>
+      <br>
+      <br>
+      <br>
+      <li>
+        <div class="piBtn">
+          <a href="https://www.medicines.org.uk/emc#gref">
+            <img src="images/PI-icon.png" alt="pi" style="width:100%; height:100%">
+          </a>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <div id="main">
+
+  </div>
+  <!-- -------------- Navigation Bar (End) -------------- -->
+
+
+  <!-- -------------- Webpage Content (Start) -------------- -->
+
+  <div class="container">
+    <h1 id="secret3-title">1. Improving patients' ability to preform daily activities</h1>
+    <section>
+      <p id="secret3-text">
+        Slide the arrows to select a <br> number of activities you give <br> your patients
+      </p>
+    </section>
+
+    <section style="margin-top: 20px;">
+
+      <div class="sliderContainer">
+        <div class="slidecontainer">
+          <input type="range" min="1" max="11" value="11" class="slider" id="myRange">
+        </div>
+
+        <div class="grid-container">
+          <div class="grid-item" id="grid-item11">≥10</div>
+          <div class="grid-item" id="grid-item10">9</div>
+          <div class="grid-item" id="grid-item9">8</div>
+          <div class="grid-item" id="grid-item8">7</div>
+          <div class="grid-item" id="grid-item7">6</div>
+          <div class="grid-item" id="grid-item6">5</div>
+          <div class="grid-item" id="grid-item5">4</div>
+          <div class="grid-item" id="grid-item4">3</div>
+          <div class="grid-item" id="grid-item3">2</div>
+          <div class="grid-item" id="grid-item2">1</div>
+          <div class="grid-item" id="grid-item1" style="opacity: 1;">0</div>
+
+        </div>
+
+
+
+      </div>
+
+      <img src="images/num2Rev.PNG" alt="" class="secretReveal" id="secret3">
+      <div class="revealBtn" id="revBtn" onclick="reveal()">
+        Press to reveal
+      </div>
+
+
+    </section>
+
+    <img src="images/Chloecap-Logo.png" alt="logo" class="logo">
+
+    <div id="refOverlay" class="Overlay">
+      <div class="OverlayContent" style="height:625px;">
+        <span onclick="changeCount(1)" class="close">&times;</span>
+        <div id="container" style="height:auto;">
+          <h1>References</h1>
+          <p>
+            1. Cholecap SmPC
+            <br>
+            2. IMC Poster. 1216:5464; 54
+            <br>
+            3. Blood Journal. John H. et al. 454:448; 12
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- -------------- Webpage Content (End) -------------- -->
+
+
+
+
+    <!-- javascript -->
+    <script src="js/app.js"></script>
+    <script src="js/slider.js"></script>
+
+
+
+    <footer>
+
+    </footer>
+
+</body>
+
+</html>
